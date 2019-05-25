@@ -1,0 +1,625 @@
+namespace_t: 'digital'
+
+    artificial: 'False' 
+    class_t: 'additive_scrambler_bb'
+
+        location: [/usr/include/gnuradio/digital/additive_scrambler_bb.h]:53
+        artificial: 'False' 
+        class type: 'class' 
+        size: 600           
+        align: 8            
+        base classes:       
+
+            class: '::gr::sync_block'
+
+                access type: 'public'
+
+                virtual inheritance: 'False'
+
+        derived classes:    
+
+            class: '::gr::digital::additive_scrambler_bb_impl'
+
+                access type: 'public'
+
+                virtual inheritance: 'False'
+
+        public:             
+
+        constructor_t: 'additive_scrambler_bb'
+
+            location: [/usr/include/gnuradio/digital/additive_scrambler_bb.h]:53
+            artificial: 'True'  
+            is extern: False
+            return type: None
+            arguments type: 
+            calling convention: __thiscall__
+
+            virtual: not virtual
+
+            is const: False
+
+            is static: False
+
+            explicit: False
+
+            copy constructor: False
+
+        constructor_t: 'additive_scrambler_bb'
+
+            location: [/usr/include/gnuradio/digital/additive_scrambler_bb.h]:53
+            artificial: 'True'  
+            is extern: False
+            return type: None
+            arguments type: ::gr::digital::additive_scrambler_bb const & arg0
+            calling convention: __thiscall__
+
+            virtual: not virtual
+
+            is const: False
+
+            is static: False
+
+            explicit: False
+
+            copy constructor: True
+
+        destructor_t: '~additive_scrambler_bb'
+
+            location: [/usr/include/gnuradio/digital/additive_scrambler_bb.h]:53
+            artificial: 'True'  
+        member_function_t: 'bits_per_byte'
+
+            location: [/usr/include/gnuradio/digital/additive_scrambler_bb.h]:75
+            artificial: 'False' 
+            mangled: _ZN2gr7digital21additive_scrambler_bb13bits_per_byteEv
+            is extern: False
+            return type: int
+            arguments type: 
+            calling convention: __thiscall__
+
+            virtual: pure virtual
+
+            is const: False
+
+            is static: False
+
+        member_function_t: 'count'
+
+            location: [/usr/include/gnuradio/digital/additive_scrambler_bb.h]:74
+            artificial: 'False' 
+            mangled: _ZNK2gr7digital21additive_scrambler_bb5countEv
+            is extern: False
+            return type: int
+            arguments type: 
+            calling convention: __thiscall__
+
+            virtual: pure virtual
+
+            is const: 1
+
+            is static: False
+
+        member_function_t: 'len'
+
+            location: [/usr/include/gnuradio/digital/additive_scrambler_bb.h]:73
+            artificial: 'False' 
+            mangled: _ZNK2gr7digital21additive_scrambler_bb3lenEv
+            is extern: False
+            return type: int
+            arguments type: 
+            calling convention: __thiscall__
+
+            virtual: pure virtual
+
+            is const: 1
+
+            is static: False
+
+        member_function_t: 'make'
+
+            location: [/usr/include/gnuradio/digital/additive_scrambler_bb.h]:69
+            artificial: 'False' 
+            mangled: _ZN2gr7digital21additive_scrambler_bb4makeEiiiiiRKNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE
+            is extern: False
+            return type: ::gr::digital::additive_scrambler_bb::sptr
+            arguments type: int mask, int seed, int len, int count, int bits_per_byte, ::std::string const & reset_tag_key
+            calling convention: __<<<system default>>>__
+
+            virtual: not virtual
+
+            is const: False
+
+            is static: 1
+
+        member_function_t: 'mask'
+
+            location: [/usr/include/gnuradio/digital/additive_scrambler_bb.h]:71
+            artificial: 'False' 
+            mangled: _ZNK2gr7digital21additive_scrambler_bb4maskEv
+            is extern: False
+            return type: int
+            arguments type: 
+            calling convention: __thiscall__
+
+            virtual: pure virtual
+
+            is const: 1
+
+            is static: False
+
+        member_function_t: 'seed'
+
+            location: [/usr/include/gnuradio/digital/additive_scrambler_bb.h]:72
+            artificial: 'False' 
+            mangled: _ZNK2gr7digital21additive_scrambler_bb4seedEv
+            is extern: False
+            return type: int
+            arguments type: 
+            calling convention: __thiscall__
+
+            virtual: pure virtual
+
+            is const: 1
+
+            is static: False
+
+        typedef_t: 'sptr'   
+
+            location: [/usr/include/gnuradio/digital/additive_scrambler_bb.h]:57
+            artificial: 'False' 
+            alias to: ::boost::shared_ptr<gr::digital::additive_scrambler_bb>
+
+        protected:          
+
+        private:            
+
+    class_t: 'additive_scrambler_bb_impl'
+
+        location: [additive_scrambler_bb_impl.h]:32
+        artificial: 'False' 
+        class type: 'class' 
+        size: 648           
+        align: 8            
+        base classes:       
+
+            class: '::gr::digital::additive_scrambler_bb'
+
+                access type: 'public'
+
+                virtual inheritance: 'False'
+
+        public:             
+
+        constructor_t: 'additive_scrambler_bb_impl'
+
+            location: [additive_scrambler_bb_impl.h]:47
+            artificial: 'False' 
+            is extern: False
+            return type: None
+            arguments type: int mask, int seed, int len, int count, int bits_per_byte, ::std::string const & reset_tag_key
+            calling convention: __thiscall__
+
+            virtual: not virtual
+
+            is const: False
+
+            is static: False
+
+            explicit: False
+
+            copy constructor: False
+
+        destructor_t: '~additive_scrambler_bb_impl'
+
+            location: [additive_scrambler_bb_impl.h]:50
+            artificial: 'False' 
+        member_function_t: 'bits_per_byte'
+
+            location: [additive_scrambler_bb_impl.h]:56
+            artificial: 'False' 
+            mangled: _ZN2gr7digital26additive_scrambler_bb_impl13bits_per_byteEv
+            is extern: False
+            return type: int
+            arguments type: 
+            calling convention: __thiscall__
+
+            virtual: virtual
+
+            is const: False
+
+            is static: False
+
+        member_function_t: 'count'
+
+            location: [additive_scrambler_bb_impl.h]:55
+            artificial: 'False' 
+            mangled: _ZNK2gr7digital26additive_scrambler_bb_impl5countEv
+            is extern: False
+            return type: int
+            arguments type: 
+            calling convention: __thiscall__
+
+            virtual: virtual
+
+            is const: 1
+
+            is static: False
+
+        member_function_t: 'len'
+
+            location: [additive_scrambler_bb_impl.h]:54
+            artificial: 'False' 
+            mangled: _ZNK2gr7digital26additive_scrambler_bb_impl3lenEv
+            is extern: False
+            return type: int
+            arguments type: 
+            calling convention: __thiscall__
+
+            virtual: virtual
+
+            is const: 1
+
+            is static: False
+
+        member_function_t: 'mask'
+
+            location: [additive_scrambler_bb_impl.h]:52
+            artificial: 'False' 
+            mangled: _ZNK2gr7digital26additive_scrambler_bb_impl4maskEv
+            is extern: False
+            return type: int
+            arguments type: 
+            calling convention: __thiscall__
+
+            virtual: virtual
+
+            is const: 1
+
+            is static: False
+
+        member_function_t: 'seed'
+
+            location: [additive_scrambler_bb_impl.h]:53
+            artificial: 'False' 
+            mangled: _ZNK2gr7digital26additive_scrambler_bb_impl4seedEv
+            is extern: False
+            return type: int
+            arguments type: 
+            calling convention: __thiscall__
+
+            virtual: virtual
+
+            is const: 1
+
+            is static: False
+
+        member_function_t: 'work'
+
+            location: [additive_scrambler_bb_impl.h]:58
+            artificial: 'False' 
+            mangled: _ZN2gr7digital26additive_scrambler_bb_impl4workEiRSt6vectorIPKvSaIS4_EERS2_IPvSaIS8_EE
+            is extern: False
+            return type: int
+            arguments type: int noutput_items, ::gr_vector_const_void_star & input_items, ::gr_vector_void_star & output_items
+            calling convention: __thiscall__
+
+            virtual: virtual
+
+            is const: False
+
+            is static: False
+
+        protected:          
+
+        private:            
+
+        member_function_t: '_get_next_reset_index'
+
+            location: [additive_scrambler_bb_impl.h]:44
+            artificial: 'False' 
+            mangled: _ZN2gr7digital26additive_scrambler_bb_impl21_get_next_reset_indexEii
+            is extern: False
+            return type: int
+            arguments type: int noutput_items, int last_reset_index
+            calling convention: __thiscall__
+
+            virtual: not virtual
+
+            is const: False
+
+            is static: False
+
+        variable_t: 'd_bits_per_byte'
+
+            location: [additive_scrambler_bb_impl.h]:41
+            artificial: 'False' 
+            type: int
+            value: None
+            size: 4             
+            align: 4            
+            offset: 40
+
+        variable_t: 'd_bytes'
+
+            location: [additive_scrambler_bb_impl.h]:38
+            artificial: 'False' 
+            type: int
+            value: None
+            size: 4             
+            align: 4            
+            offset: 28
+
+        variable_t: 'd_count'
+
+            location: [additive_scrambler_bb_impl.h]:37
+            artificial: 'False' 
+            type: int
+            value: None
+            size: 4             
+            align: 4            
+            offset: 24
+
+        variable_t: 'd_len' 
+
+            location: [additive_scrambler_bb_impl.h]:39
+            artificial: 'False' 
+            type: int
+            value: None
+            size: 4             
+            align: 4            
+            offset: 32
+
+        variable_t: 'd_lfsr'
+
+            location: [additive_scrambler_bb_impl.h]:36
+            artificial: 'False' 
+            type: ::gr::digital::lfsr
+            value: None
+            size: 16            
+            align: 4            
+            offset: 8
+
+        variable_t: 'd_reset_tag_key'
+
+            location: [additive_scrambler_bb_impl.h]:42
+            artificial: 'False' 
+            type: ::pmt::pmt_t
+            value: None
+            size: 0             
+            align: 0            
+            offset: 48
+
+        variable_t: 'd_seed'
+
+            location: [additive_scrambler_bb_impl.h]:40
+            artificial: 'False' 
+            type: int
+            value: None
+            size: 4             
+            align: 4            
+            offset: 36
+
+    class_t: 'lfsr'     
+
+        location: [/usr/include/gnuradio/digital/lfsr.h]:90
+        artificial: 'False' 
+        class type: 'class' 
+        size: 16            
+        align: 4            
+        public:             
+
+        constructor_t: 'lfsr'
+
+            location: [/usr/include/gnuradio/digital/lfsr.h]:90
+            artificial: 'True'  
+            is extern: False
+            return type: None
+            arguments type: ::gr::digital::lfsr const & arg0
+            calling convention: __thiscall__
+
+            virtual: not virtual
+
+            is const: False
+
+            is static: False
+
+            explicit: False
+
+            copy constructor: True
+
+        constructor_t: 'lfsr'
+
+            location: [/usr/include/gnuradio/digital/lfsr.h]:107
+            artificial: 'False' 
+            is extern: False
+            return type: None
+            arguments type: ::uint32_t mask, ::uint32_t seed, ::uint32_t reg_len
+            calling convention: __thiscall__
+
+            virtual: not virtual
+
+            is const: False
+
+            is static: False
+
+            explicit: False
+
+            copy constructor: False
+
+        destructor_t: '~lfsr'
+
+            location: [/usr/include/gnuradio/digital/lfsr.h]:90
+            artificial: 'True'  
+        member_function_t: 'mask'
+
+            location: [/usr/include/gnuradio/digital/lfsr.h]:157
+            artificial: 'False' 
+            mangled: _ZNK2gr7digital4lfsr4maskEv
+            is extern: False
+            return type: int
+            arguments type: 
+            calling convention: __thiscall__
+
+            virtual: not virtual
+
+            is const: 1
+
+            is static: False
+
+        member_function_t: 'next_bit'
+
+            location: [/usr/include/gnuradio/digital/lfsr.h]:117
+            artificial: 'False' 
+            mangled: _ZN2gr7digital4lfsr8next_bitEv
+            is extern: False
+            return type: unsigned char
+            arguments type: 
+            calling convention: __thiscall__
+
+            virtual: not virtual
+
+            is const: False
+
+            is static: False
+
+        member_function_t: 'next_bit_descramble'
+
+            location: [/usr/include/gnuradio/digital/lfsr.h]:133
+            artificial: 'False' 
+            mangled: _ZN2gr7digital4lfsr19next_bit_descrambleEh
+            is extern: False
+            return type: unsigned char
+            arguments type: unsigned char input
+            calling convention: __thiscall__
+
+            virtual: not virtual
+
+            is const: False
+
+            is static: False
+
+        member_function_t: 'next_bit_scramble'
+
+            location: [/usr/include/gnuradio/digital/lfsr.h]:125
+            artificial: 'False' 
+            mangled: _ZN2gr7digital4lfsr17next_bit_scrambleEh
+            is extern: False
+            return type: unsigned char
+            arguments type: unsigned char input
+            calling convention: __thiscall__
+
+            virtual: not virtual
+
+            is const: False
+
+            is static: False
+
+        member_function_t: 'pre_shift'
+
+            location: [/usr/include/gnuradio/digital/lfsr.h]:150
+            artificial: 'False' 
+            mangled: _ZN2gr7digital4lfsr9pre_shiftEi
+            is extern: False
+            return type: void
+            arguments type: int num
+            calling convention: __thiscall__
+
+            virtual: not virtual
+
+            is const: False
+
+            is static: False
+
+        member_function_t: 'reset'
+
+            location: [/usr/include/gnuradio/digital/lfsr.h]:144
+            artificial: 'False' 
+            mangled: _ZN2gr7digital4lfsr5resetEv
+            is extern: False
+            return type: void
+            arguments type: 
+            calling convention: __thiscall__
+
+            virtual: not virtual
+
+            is const: False
+
+            is static: False
+
+        member_operator_t: 'operator='
+
+            location: [/usr/include/gnuradio/digital/lfsr.h]:90
+            artificial: 'True'  
+            mangled: _ZN2gr7digital4lfsraSERKS1_
+            is extern: False
+            return type: ::gr::digital::lfsr &
+            arguments type: ::gr::digital::lfsr const & arg0
+            calling convention: __thiscall__
+
+            virtual: not virtual
+
+            is const: False
+
+            is static: False
+
+        protected:          
+
+        private:            
+
+        member_function_t: 'popCount'
+
+            location: [/usr/include/gnuradio/digital/lfsr.h]:99
+            artificial: 'False' 
+            mangled: _ZN2gr7digital4lfsr8popCountEj
+            is extern: False
+            return type: ::uint32_t
+            arguments type: ::uint32_t x
+            calling convention: __<<<system default>>>__
+
+            virtual: not virtual
+
+            is const: False
+
+            is static: 1
+
+        variable_t: 'd_mask'
+
+            location: [/usr/include/gnuradio/digital/lfsr.h]:94
+            artificial: 'False' 
+            type: ::uint32_t
+            value: None
+            size: 0             
+            align: 0            
+            offset: 4
+
+        variable_t: 'd_seed'
+
+            location: [/usr/include/gnuradio/digital/lfsr.h]:95
+            artificial: 'False' 
+            type: ::uint32_t
+            value: None
+            size: 0             
+            align: 0            
+            offset: 8
+
+        variable_t: 'd_shift_register'
+
+            location: [/usr/include/gnuradio/digital/lfsr.h]:93
+            artificial: 'False' 
+            type: ::uint32_t
+            value: None
+            size: 0             
+            align: 0            
+            offset: 0
+
+        variable_t: 'd_shift_register_length'
+
+            location: [/usr/include/gnuradio/digital/lfsr.h]:96
+            artificial: 'False' 
+            type: ::uint32_t
+            value: None
+            size: 0             
+            align: 0            
+            offset: 12
+
