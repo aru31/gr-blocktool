@@ -1,0 +1,107 @@
+{
+  "namspace": [
+    {
+      "gr": "analog"
+    }
+  ],
+  "class": "agc2_cc_impl",
+  "io_signature": {
+    "in_port": {
+      "in0": "gr_complex"
+    },
+    "out_port": {
+      "out0": "gr_complex"
+    }
+  },
+  "public": {
+    "make": {
+        "arguments": [
+          {
+          "attack_rate": {
+            "dtype": "float"
+          }},
+          {
+          "decay_rate": {
+            "dtype": "float"
+          }},
+          {
+          "reference": {
+            "dtype": "float"
+          }},
+          {
+          "gain": {
+            "dtype": "float"
+          }}
+        ]
+    },
+    "properties": {
+      "attack_rate": {
+        "dtype": "float",
+        "default": "1e-1"
+      },
+      "decay_rate": {
+        "dtype": "float",
+        "default": "1e-2"
+      },
+      "gain": {
+        "dtype": "float",
+        "default": "1.0"
+      },
+      "max_gain": {
+        "dtype": "float",
+        "default": "65536"
+      },
+      "reference": {
+        "dtype": "float",
+        "default": "1.0"
+      }
+    },
+    "methods": {
+      "set_attack_rate": {
+        "dtype": "float",
+        "default": "1e-1",
+        "arguments type": {
+          "rate": {
+            "dtype": "float"
+          }
+        }
+      },
+      "set_decay_rate": {
+        "dtype": "float",
+        "default": "1e-2",
+        "arguments type": {
+          "rate": {
+            "dtype": "float"
+          }
+        }
+      },
+      "set_gain": {
+        "dtype": "float",
+        "default": "1.0",
+        "arguments type": {
+          "gain": {
+            "dtype": "float"
+          }
+        }
+      },
+      "set_max_gain": {
+        "dtype": "float",
+        "default": "65536",
+        "arguments type": {
+          "max_gain": {
+            "dtype": "float"
+          }
+        }
+      },
+      "set_reference": {
+        "dtype": "float",
+        "default": "1.0",
+        "arguments type": {
+          "reference": {
+            "dtype": "float"
+          }
+        }
+      }
+    }
+  }
+}

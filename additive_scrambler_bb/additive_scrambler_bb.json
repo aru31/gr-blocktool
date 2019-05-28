@@ -1,0 +1,69 @@
+{
+  "namspace": [
+    {
+    "gr": "digital"
+    }
+  ],
+  "class": "additive_scrambler_bb_impl",
+  "io_signature": {
+    "in_port": {
+      "in0": "char"
+    },
+    "out_port": {
+      "out0": "char"
+    }
+  },
+  "public": {
+    "make": {
+        "arguments": [
+          {
+          "mask": {
+            "dtype": "int"
+          }},
+          {
+          "seed": {
+            "dtype": "int"
+          }},
+          {
+          "len": {
+            "dtype": "int"
+          }},
+          {
+          "count": {
+            "dtype": "int"
+          }},
+          {
+          "bits_per_byte": {
+            "dtype": "int"
+          }},
+          {
+          "::std::string const & reset_tag_key": {
+            "dtype": "string"
+          }}
+        ]
+      },
+    "properties": {
+      "bits_per_byte": {
+        "dtype": "int",
+        "default": ""
+      },
+      "count": {
+        "dtype": "int",
+        "default": "0"
+      },
+      "len": {
+        "dtype": "int",
+        "default": ""
+      },
+      "mask": {
+        "dtype": "int",
+        "default": ""
+      },
+      "seed": {
+        "dtype": "int",
+        "default": ""
+      }
+    },
+    "methods": {}
+  }
+}
