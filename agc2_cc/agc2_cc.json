@@ -1,10 +1,9 @@
 {
   "namspace": [
-    {
-      "gr": "analog"
-    }
+      "gr",
+      "analog"
   ],
-  "class": "agc2_cc_impl",
+  "class": "agc2_cc",
   "io_signature": {
     "in_port": {
       "in0": "gr_complex"
@@ -13,93 +12,85 @@
       "out0": "gr_complex"
     }
   },
-  "public": {
-    "make": {
-        "arguments": [
-          {
-          "attack_rate": {
-            "dtype": "float"
-          }},
-          {
-          "decay_rate": {
-            "dtype": "float"
-          }},
-          {
-          "reference": {
-            "dtype": "float"
-          }},
-          {
-          "gain": {
-            "dtype": "float"
-          }}
-        ]
+  "make": {
+      "arguments": [
+        {
+          "name": "attack_rate",
+          "dtype": "float",
+          "default": "1e-1"
+        },
+        {
+          "name": "decay_rate",
+          "dtype": "float",
+          "default": "1e-2"
+        },
+        {
+          "name": "reference",
+          "dtype": "float",
+          "default": "1.0"
+        },
+        {
+          "name": "gain",
+          "dtype": "float",
+          "default": "1.0"
+        }
+      ]
+  },
+  "properties": {
+    "attack_rate": {
+      "dtype": "float"
     },
-    "properties": {
-      "attack_rate": {
-        "dtype": "float",
-        "default": "1e-1"
-      },
-      "decay_rate": {
-        "dtype": "float",
-        "default": "1e-2"
-      },
-      "gain": {
-        "dtype": "float",
-        "default": "1.0"
-      },
-      "max_gain": {
-        "dtype": "float",
-        "default": "65536"
-      },
-      "reference": {
-        "dtype": "float",
-        "default": "1.0"
+    "decay_rate": {
+      "dtype": "float"
+    },
+    "gain": {
+      "dtype": "float"
+    },
+    "max_gain": {
+      "dtype": "float"
+    },
+    "reference": {
+      "dtype": "float"
+    }
+  },
+  "methods": {
+    "set_attack_rate": {
+      "dtype": "float",
+      "arguments type": {
+        "rate": {
+          "dtype": "float"
+        }
       }
     },
-    "methods": {
-      "set_attack_rate": {
-        "dtype": "float",
-        "default": "1e-1",
-        "arguments type": {
-          "rate": {
-            "dtype": "float"
-          }
+    "set_decay_rate": {
+      "dtype": "float",
+      "arguments type": {
+        "rate": {
+          "dtype": "float"
         }
-      },
-      "set_decay_rate": {
-        "dtype": "float",
-        "default": "1e-2",
-        "arguments type": {
-          "rate": {
-            "dtype": "float"
-          }
+      }
+    },
+    "set_gain": {
+      "dtype": "float",
+      "arguments type": {
+        "gain": {
+          "dtype": "float"
         }
-      },
-      "set_gain": {
-        "dtype": "float",
-        "default": "1.0",
-        "arguments type": {
-          "gain": {
-            "dtype": "float"
-          }
+      }
+    },
+    "set_max_gain": {
+      "dtype": "float",
+      "arguments type": {
+        "max_gain": {
+          "dtype": "float"
         }
-      },
-      "set_max_gain": {
-        "dtype": "float",
-        "default": "65536",
-        "arguments type": {
-          "max_gain": {
-            "dtype": "float"
-          }
-        }
-      },
-      "set_reference": {
-        "dtype": "float",
-        "default": "1.0",
-        "arguments type": {
-          "reference": {
-            "dtype": "float"
-          }
+      }
+    },
+    "set_reference": {
+      "dtype": "float",
+      "arguments type": {
+        "reference": {
+          "dtype": "float"
         }
       }
     }

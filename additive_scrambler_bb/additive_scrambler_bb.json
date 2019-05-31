@@ -1,10 +1,9 @@
 {
   "namspace": [
-    {
-    "gr": "digital"
-    }
+    "gr",
+    "digital"
   ],
-  "class": "additive_scrambler_bb_impl",
+  "class": "additive_scrambler_bb",
   "io_signature": {
     "in_port": {
       "in0": "char"
@@ -13,57 +12,56 @@
       "out0": "char"
     }
   },
-  "public": {
-    "make": {
-        "arguments": [
-          {
-          "mask": {
-            "dtype": "int"
-          }},
-          {
-          "seed": {
-            "dtype": "int"
-          }},
-          {
-          "len": {
-            "dtype": "int"
-          }},
-          {
-          "count": {
-            "dtype": "int"
-          }},
-          {
-          "bits_per_byte": {
-            "dtype": "int"
-          }},
-          {
-          "::std::string const & reset_tag_key": {
-            "dtype": "string"
-          }}
-        ]
-      },
-    "properties": {
-      "bits_per_byte": {
-        "dtype": "int",
-        "default": ""
-      },
-      "count": {
-        "dtype": "int",
-        "default": "0"
-      },
-      "len": {
-        "dtype": "int",
-        "default": ""
-      },
-      "mask": {
-        "dtype": "int",
-        "default": ""
-      },
-      "seed": {
-        "dtype": "int",
-        "default": ""
-      }
+  "make": {
+      "arguments": [
+        {
+          "name": "mask",
+          "dtype": "int",
+          "default": ""
+        },
+        {
+          "name": "seed",
+          "dtype": "int",
+          "default": ""
+        },
+        {
+          "name": "len",
+          "dtype": "int",
+          "default": ""
+        },
+        {
+          "name": "count",
+          "dtype": "int",
+          "default": "0"
+        },
+        {
+          "name": "bits_per_byte",
+          "dtype": "int",
+          "default": "1"
+        },
+        {
+          "name": "reset_tag_key",
+          "dtype": "string",
+          "default": ""
+        }
+      ]
     },
-    "methods": {}
-  }
+  "properties": {
+    "bits_per_byte": {
+      "dtype": "int"
+    },
+    "count": {
+      "dtype": "int"
+    },
+    "len": {
+      "dtype": "int"
+    },
+    "mask": {
+      "dtype": "int"
+    },
+    "seed": {
+      "dtype": "int"
+    }
+  },
+  "methods": {}
 }
