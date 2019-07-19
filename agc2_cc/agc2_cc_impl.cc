@@ -30,7 +30,10 @@
 
 namespace gr {
   namespace analog {
-
+    /* message port Id
+        input: []
+        output: []
+    */
     agc2_cc::sptr
     agc2_cc::make(float attack_rate, float decay_rate,
 		  float reference, float gain)

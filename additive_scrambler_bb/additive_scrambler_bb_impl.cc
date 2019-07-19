@@ -29,7 +29,10 @@
 
 namespace gr {
   namespace digital {
-
+    /* message port Id
+        input: []
+        output: []
+    */
     additive_scrambler_bb::sptr
     additive_scrambler_bb::make (int mask, int seed,
 				 int len, int count,
